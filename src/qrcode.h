@@ -38,9 +38,11 @@
 #define __QRCODE_H_
 
 #ifndef __cplusplus
+#if !defined(__bool_true_false_are_defined)
 typedef unsigned char bool;
 static const bool false = 0;
 static const bool true = 1;
+#endif
 #endif
 
 #include <stdint.h>
